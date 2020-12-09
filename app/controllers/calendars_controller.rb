@@ -29,7 +29,7 @@ class CalendarsController < ApplicationController
       today_plans = []
       plans.each do |plan|
         today_plans.push(plan.plan) if plan.date == @todays_date + x
-      en
+      end
 
       wday_num = Date.today.wday + x
       if wday_num >= 7
